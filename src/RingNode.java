@@ -140,7 +140,7 @@ public class RingNode {
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         if (args.length != 3){
             System.out.println("Usage: [this port] [next host] [next port]");
             System.out.println("Only: "+args.length+" parameters entered");
