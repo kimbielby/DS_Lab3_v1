@@ -22,31 +22,55 @@ public class RingNode {
 
                 // Confirm that token has been received
                 System.out.println("Server socket has received the token");
+            }
+            catch (Exception e){}
 
+            try {
                 // DO SECTION TO UPDATE THE FILE
+            }
+            catch (Exception e){}
 
-                // Close the current socket
+            // Close the current socket
+            try {
                 thisNodeSock.close();
+            }
+            catch (Exception e){}
 
-                // Create a new socket to send the token to
+            // Create a new socket to send the token to
+            try {
                 nextNodeSock = new Socket(nextHost, nextPort);
+            }
+            catch (Exception e){}
 
-                // Check that the connection was successful
+            // Check that the connection was successful
+            try {
                 if (nextNodeSock.isConnected()){
                     // Do a print line
                 }
                 else{
                     // Do a print line
                 }
+            }
+            catch (Exception e){}
 
+            try {
                 // DO A TRY-CATCH THREAD SLEEP FOR A WEE BIT
+            }
+            catch (Exception e){}
 
-                // Close the new socket
+            // Close the new socket
+            try {
                 nextNodeSock.close();
+            }
+            catch (Exception e){}
 
+            try {
                 // DO A TRY-CATCH THREAD SLEEP FOR A WEE BIT
+            }
+            catch (Exception e){}
 
-                //Check that the connection was successfully closed
+            //Check that the connection was successfully closed
+            try {
                 if (nextNodeSock.isClosed()){
                     // Do a print line
                 }
