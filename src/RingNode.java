@@ -34,7 +34,7 @@ public class RingNode {
 
                 // Confirm that token has been received
                 System.out.println("Server socket ("+hostName+":  "+thisPort +") has received the token");
-                System.out.println("Ring node has the token");
+                System.out.println("Ring node "+thisPort+" has the token");
             }
             catch (Exception e){}
 
@@ -81,7 +81,7 @@ public class RingNode {
                 nextNodeSock = new Socket(nextHost, nextPort);
 
                 // Confirm status
-                System.out.println("Ring node is now releasing the token");
+                System.out.println("Ring node "+thisPort+" is now releasing the token");
             }
             catch (Exception e){}
 
