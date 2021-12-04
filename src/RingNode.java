@@ -40,26 +40,23 @@ public class RingNode {
 
             // Critical section that writes to a file
             try {
-                // Create file
-                record = new RandomAccessFile("record.txt", "rw");
-
                 // Create the timestamp
-                Date tStamp = new Date();
+                // Date tStamp = new Date();
 
                 // Convert the timestamp to a String
-                String timeStamp = tStamp.toString();
+                // String timeStamp = tStamp.toString();
 
                 // Write the timestamp in the file
-                record.writeChars(timeStamp);
+                // record.writeChars(timeStamp);
 
                 // Print confirmation
-                System.out.println("Record from ring node on host "+hostName+", port number "+thisPort+", is "+timeStamp);
+                // System.out.println("Record from ring node on host "+hostName+", port number "+thisPort+", is "+timeStamp);
 
                 // Close the random access filestream
-                record.close();
+                // record.close();
             }
-            catch (IOException e){
-                System.out.println("Error writing to file: "+e);
+            catch (Exception e){
+                // System.out.println("Error writing to file: "+e);
             }
 
             // Have a pause before starting next part
